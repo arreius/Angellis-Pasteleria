@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/estilosSocial.css">
-    <link rel="stylesheet" href="../../styles/estiloHome.min.css">
+    <link rel="stylesheet" href="/styles/estilosSocial.css">
+    <link rel="stylesheet" href="/styles/estiloHome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="index.html">
+                        <a class="nav-link text-uppercase text-expanded" href="/">
                             Principal
                             <span class="sr-only">(current)</span>
                         </a>
@@ -36,13 +36,14 @@
 
 
                     <li class="nav-item dropdown px-lg-4">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle  text-uppercase text-expanded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             TIENDA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li>@Html.ActionLink("Catalogo", "Catalog", "Store")</li>
-                            <li>@Html.ActionLink("Pasteles", "Cake", "Store")</li>
-                            <li>@Html.ActionLink("Postres", "Dessert", "Store")</li>
+                            <li class="nav-item px-lg-4">@Html.ActionLink("CATALOGO", "Catalog", "Store")</li>
+                            <li class="nav-item px-lg-4">@Html.ActionLink("PASTELES", "Cake", "Store")</li>
+                            <li class="nav-item px-lg-4">@Html.ActionLink("POSTRES", "Dessert", "Store")</li>
+
                         </ul>
                     </li>
 
